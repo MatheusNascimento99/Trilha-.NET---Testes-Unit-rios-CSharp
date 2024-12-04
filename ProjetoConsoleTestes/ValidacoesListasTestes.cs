@@ -1,6 +1,6 @@
 namespace ProjetoConsoleTestes;
 
-public class UnitTest1
+public class ValidacoesListasTestes
 {
     [Fact]
     public void Test1()
