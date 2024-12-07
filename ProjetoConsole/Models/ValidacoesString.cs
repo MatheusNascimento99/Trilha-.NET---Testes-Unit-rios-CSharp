@@ -7,12 +7,22 @@ namespace ProjetoConsole.Models
 {
     public class ValidacoesString
     {
-        //métodos
-        
-        //RetornarQuantidadeCaracteres - Recebe um texto qualquer e retorna a quantidade de caracteres presentes no texto
+        public int QuantidadeCaracteres(string texto)
+        {
+            int QuantidadeCaracteres = texto.Length;
+            return QuantidadeCaracteres;
+        }
 
-        //ContemCaractere - Recebe um texto qualquer e um texto a ser procurado, retorna verdadeiro ou falso se um determinado trecho procurado está presente no texto
+        public bool ContemCaractere(string texto, string textoProcurado)
+        {
+            bool ContemCaractere = texto.Contains(textoProcurado); ;
+            return ContemCaractere;
+        }
 
-        //TextoTerminaCom - Recebe um texto qualquer e um trecho a ser procurado, retorna verdadeiro ou falso se um determinado trecho procurado está presente no final do texto apenas
+        public bool TextoTerminaCom(string texto, string terminaCom)
+        {
+            bool TextoTerminaCom = texto.EndsWith(terminaCom);
+            return TextoTerminaCom;
+        }
     }
 }
