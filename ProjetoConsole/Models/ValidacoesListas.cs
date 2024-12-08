@@ -45,7 +45,8 @@ namespace ProjetoConsole.Models
 
         public int RetornarMaiorNumeroLista(List<int> listaNumeros)
         {
-            int maiorNumero = 0;
+            int maiorNumero = int.MinValue;
+
             foreach (int numero in listaNumeros)
             {
                 if (numero > maiorNumero)
@@ -58,7 +59,7 @@ namespace ProjetoConsole.Models
 
         public int RetornarMenorNumeroLista(List<int> listaNumeros)
         {
-            int menorNumero = 0;
+            int menorNumero = int.MaxValue;
             menorNumero = listaNumeros[0];
 
             foreach (int numero in listaNumeros)
